@@ -1,0 +1,528 @@
+Items:
+  - !LowYaml.Test.Arma Espada|1
+  - Item1|5
+  - !LowYaml.Test.Pocion Pocion|3
+ItemsDict:
+  -
+    key: espada
+    value: !LowYaml.Test.Arma Espada Roja|1
+  -
+    key: pocion
+    value: Pocion|5
+Entero: 42
+Flotante: 3.14
+Doble: 99.99
+Booleano: true
+Caracter: A
+Largo: 123456789
+Byte: 255
+TextoSimple: Hola mundo
+TextoMultilinea: |
+  linea1
+  linea2
+  linea3
+TextoVacio:
+TextoConEspacios:    texto con espacios   
+Numeros:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+Nombres:
+  - Ana
+  - Juan
+  - Pedro
+Personajes:
+  - !LowYaml.Test.Guerrero
+    Fuerza: 999
+    Profesion: Tanque
+    Nombre: Ragnar
+    Nivel: 10
+    Inventario:
+      - !LowYaml.Test.Arma Hacha|1
+    Id: g1
+  - !LowYaml.Test.Mago 400
+Matriz:
+  -
+    - 1
+    - 2
+  -
+    - 3
+    - 4
+ListaVacia:
+ListaUnItem:
+  - 99
+ArrayNumeros:
+  - 10
+  - 20
+  - 30
+ArrayStrings:
+  - a
+  - b
+  - c
+ArrayVacio:
+ArrayUnItem:
+  - 777
+Scores:
+  -
+    key: juan
+    value: 10
+  -
+    key: pedro
+    value: 99
+  -
+    key: ana
+    value: -5
+Textos:
+  -
+    key: simple
+    value: valor
+  -
+    key: multilinea
+    value: |
+      hola
+      mundo
+PersonajesDict:
+  -
+    key: tank
+    value: !LowYaml.Test.Guerrero
+      Fuerza: 999
+      Profesion:
+      Nombre: Ragnar
+      Nivel: 0
+      Inventario:
+      Id: p1
+  -
+    key: mage
+    value: !LowYaml.Test.Mago 400
+ListasDict:
+  -
+    key: a
+    value:
+      - 1
+      - 2
+      - 3
+      - 4
+  -
+    key: b
+    value:
+      - 9
+      - 8
+      - 7
+NestedDict:
+  -
+    key: grupo1
+    value:
+      -
+        key: x
+        value: 1
+      -
+        key: y
+        value: 2
+  -
+    key: grupo2
+    value:
+      -
+        key: a
+        value: 100
+      -
+        key: b
+        value: 200
+ArraysDict:
+  -
+    key: nums
+    value:
+      - 5
+      - 6
+      - 7
+      - 8
+Shaders:
+  -
+    key: agua
+    value: |
+      color blue
+      wave 0.5
+      speed 3
+KeysRaras:
+  -
+    key: hola mundo
+    value: a
+  -
+    key: x:y
+    value: b
+  -
+    key: ----
+    value: c
+  -
+    key: 123
+    value: d
+DictVacio:
+ShaderSimple: solid red
+ShaderMultilinea: |
+  color blue
+  wave 0.5
+  speed 3
+ItemSimple: Pocion|10
+ArmaEjemplo: Espada|1
+PocionEjemplo: Curacion|5
+GuerreroEjemplo:
+  Fuerza: 999
+  Profesion: Tanque
+  Nombre: Ragnar
+  Nivel: 10
+  Inventario:
+  Id: g1
+MagoEjemplo: 400
+DragonEjemplo:
+  Fuego: 999.9
+  Enemigos:
+    - !LowYaml.Test.Guerrero
+      Fuerza: 999
+      Profesion: Tanque
+      Nombre: Ragnar
+      Nivel: 10
+      Inventario:
+        - !LowYaml.Test.Arma Hacha|1
+      Id: g1
+    - !LowYaml.Test.Mago 400
+  Salvaje: true
+  Nombre: Aldur
+  Nivel: 99
+  Inventario:
+  Id: d1
+nodo_vacio: null
+nodo_normal:
+  Name: normal
+  Next: null
+nodo_circular:
+  Name: circulo
+  Next: null
+nodo_a:
+  Name: A
+  Next:
+    Name: B
+    Next: null
+nodo_b:
+  Name: B
+  Next:
+    Name: A
+    Next: null
+ItemNulo: null
+StringNulo:
+ListaNula: null
+DictNulo: null
+Cero: 0
+Falso: false
+Vacio:
+ObjetoConRenombres:
+  id: 123
+  nombre_completo: Juan Perez
+  edad_usuario: 25
+  es_activo: true
+  lista_numeros:
+    - 1
+    - 2
+    - 3
+  datos_extra:
+    -
+      key: key1
+      value: valor1
+    -
+      key: key2
+      value: valor2
+  Normal: sin renombrar
+ListaConRenombres:
+  -
+    id: 1
+    nombre_completo: Item1
+    edad_usuario: 10
+    es_activo: true
+    lista_numeros:
+      - 1
+      - 2
+      - 3
+    datos_extra:
+      -
+        key: key1
+        value: valor1
+      -
+        key: key2
+        value: valor2
+    Normal: sin renombrar
+  -
+    id: 2
+    nombre_completo: Item2
+    edad_usuario: 20
+    es_activo: false
+    lista_numeros:
+      - 1
+      - 2
+      - 3
+    datos_extra:
+      -
+        key: key1
+        value: valor1
+      -
+        key: key2
+        value: valor2
+    Normal: sin renombrar
+  -
+    id: 3
+    nombre_completo: Item3
+    edad_usuario: 30
+    es_activo: true
+    lista_numeros:
+      - 1
+      - 2
+      - 3
+    datos_extra:
+      -
+        key: key1
+        value: valor1
+      -
+        key: key2
+        value: valor2
+    Normal: sin renombrar
+  -
+    id: 1
+    nombre_completo: Item1
+    edad_usuario: 10
+    es_activo: true
+    lista_numeros:
+      - 1
+      - 2
+      - 3
+    datos_extra:
+      -
+        key: key1
+        value: valor1
+      -
+        key: key2
+        value: valor2
+    Normal: sin renombrar
+  -
+    id: 2
+    nombre_completo: Item2
+    edad_usuario: 20
+    es_activo: false
+    lista_numeros:
+      - 1
+      - 2
+      - 3
+    datos_extra:
+      -
+        key: key1
+        value: valor1
+      -
+        key: key2
+        value: valor2
+    Normal: sin renombrar
+  -
+    id: 3
+    nombre_completo: Item3
+    edad_usuario: 30
+    es_activo: true
+    lista_numeros:
+      - 1
+      - 2
+      - 3
+    datos_extra:
+      -
+        key: key1
+        value: valor1
+      -
+        key: key2
+        value: valor2
+    Normal: sin renombrar
+Posicion: 10.5;20.3;5.7
+ColorFondo: 255,128,64,200
+Puntos3D:
+  - 0;0;0
+  - 1;1;1
+  - 2;4;8
+  - 0;0;0
+  - 1;1;1
+  - 2;4;8
+PaletaColores:
+  -
+    key: rojo
+    value: 255,0,0,255
+  -
+    key: verde
+    value: 0,255,0,255
+  -
+    key: azul
+    value: 0,0,255,255
+  -
+    key: blanco
+    value: 255,255,255,0
+  -
+    key: transparente
+    value: 128,128,128,128
+PosicionInicial: 10.5;20.3;5.7
+PosicionFinal: 100;200;50
+ColorTexto: 0,0,0,255
+EnteroNulo: null
+EnteroConValor: !System.Int32 42
+FechaNula: null
+FechaActual: 2026-10-31T20:40:30.9667471-05:00
+FechaUTC: 2026-11-01T01:40:30.9710679Z
+SoloFecha: 2026-10-31
+SoloHora: 20:40:30.9710804
+Identificador: e785f18f-f59f-433c-a93e-234aa694eaeb
+ValorDecimal: 123.456
+UrlEjemplo: https://ejemplo.com/ruta
+VersionApp: 1.2.3.4
+HashSetNumeros:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+HashSetStrings:
+  - a
+  - b
+  - c
+HashSetPuntos:
+  - 1;1;1
+  - 2;2;2
+  - 3;3;3
+PosicionNula: null
+ColorNulo: null
+# Texto multilínea simple
+TextoMultiSimple: |
+  línea1
+  línea2
+  línea3
+# Texto multilínea con espacios
+TextoMultiEspacios: |
+    línea con espacios
+    línea con tab
+    línea final  
+ListaStringsMulti:
+  - string simple
+  - |
+    línea1
+    línea2
+    línea3
+  -   espacios al inicio y al final  
+  -
+  -
+DictStringsMulti:
+  -
+    key: simple
+    value: valor simple
+  -
+    key: multiline
+    value: |
+      hola
+      mundo
+      cruel
+  -
+    key: espacios
+    value:   texto con espacios  
+  -
+    key: vacio
+    value:
+# Punto 2D con parser externo
+Origen: 10:20
+Destino: 100:200
+ListaPuntos:
+  - 1:2
+  - 3:4
+  - 5:6
+DiccionarioPuntos:
+  -
+    key: origen
+    value: 0:0
+  -
+    key: medio
+    value: 50:50
+  -
+    key: final
+    value: 100:100
+Marco: 1920x1080
+Rectangulos:
+  - 800x600
+  - 1024x768
+  - 3840x2160
+Usuario: Juan|30
+Personas:
+  - Ana|25
+  - Luis|35
+  - Marta|28
+PuntoNulo: null
+DiccionarioPolimorficoEntidades:
+  -
+    key: arma1
+    value: !LowYaml.Test.Arma Espada|1
+  -
+    key: arma2
+    value: !LowYaml.Test.Arma Hacha|1
+  -
+    key: pocion1
+    value: !LowYaml.Test.Pocion Vida|5
+  -
+    key: pocion2
+    value: !LowYaml.Test.Pocion Mana|3
+DiccionarioPolimorficoItems:
+  -
+    key: espada_roja
+    value: !LowYaml.Test.Arma Espada Roja|1
+  -
+    key: espada_azul
+    value: !LowYaml.Test.Arma Espada Azul|1
+  -
+    key: pocion_pequena
+    value: !LowYaml.Test.Pocion Pocion Pequeña|5
+DiccionarioPolimorficoPersonajes:
+  -
+    key: guerrero_ragnar
+    value: !LowYaml.Test.Guerrero
+      Fuerza: 999
+      Profesion: Tanque
+      Nombre: Ragnar
+      Nivel: 10
+      Inventario:
+      Id: g1
+  -
+    key: mago_ezren
+    value: !LowYaml.Test.Mago 400
+  -
+    key: dragon_aldur
+    value: !LowYaml.Test.Dragon
+      Fuego: 999.9
+      Enemigos:
+      Salvaje: true
+      Nombre: Aldur
+      Nivel: 99
+      Inventario:
+      Id: d1
+DiccionarioPolimorficoObject:
+  -
+    key: !System.String string_key
+    value: !System.String valor string
+  -
+    key: !System.Int32 42
+    value: !System.Int32 123
+  -
+    key: !LowYaml.Test.Vector3 1;2;3
+    value: !LowYaml.Test.Arma Arma en diccionario|1
+DiccionarioPolimorficoObjectValue:
+  -
+    key: entero
+    value: !System.Int32 999
+  -
+    key: string
+    value: !System.String texto de ejemplo
+  -
+    key: arma
+    value: !LowYaml.Test.Arma Arma objeto|1
+  -
+    key: pocion
+    value: !LowYaml.Test.Pocion Pocion objeto|3
+  -
+    key: vector
+    value: !LowYaml.Test.Vector3 10;20;30
+# creado con lowfile
