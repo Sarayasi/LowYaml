@@ -6,8 +6,8 @@ Serializador de objetos C# a un formato de texto **estilo YAML**, basado en inde
 string texto = LowFile.Serialize(miObjeto);
 var cargado  = LowFile.Deserialize<Archivo>(texto);
 ```
+<img width="456" height="594" alt="code" src="https://github.com/user-attachments/assets/7a68de10-bdfc-4d20-92ac-0d8169c0d127" />
 
-<img width="1680" height="773" alt="image" src="https://github.com/user-attachments/assets/0396dd3c-62b2-4d33-abc3-56c1784d52e4" />
 
 ## Características
 
