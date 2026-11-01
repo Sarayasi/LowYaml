@@ -7,6 +7,8 @@ string texto = LowFile.Serialize(miObjeto);
 var cargado  = LowFile.Deserialize<Archivo>(texto);
 ```
 
+<img width="1680" height="773" alt="image" src="https://github.com/user-attachments/assets/0396dd3c-62b2-4d33-abc3-56c1784d52e4" />
+
 ## Características
 
 - Serializa y deserializa **campos** (públicos y privados) por reflexión.
